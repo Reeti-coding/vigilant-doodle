@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball with Confetti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        #ball {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveBall 1s linear forwards;
+        }
+
+        #birthday-message {
+            display: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+    <p id="birthday-message">Happy Birthday!</p>
+
+    <script src="https://media0.giphy.com/media/5jT0jaNDsM6Ik7X9yq/giphy.gif"></script>
+    <script src="script.js"></script>
+</body>
+</html>
